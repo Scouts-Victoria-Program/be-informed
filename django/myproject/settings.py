@@ -58,6 +58,21 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     # Include this to add history to models
     'simple_history',
+    # Include these to use Wagtail
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+    'wagtail.core',
+    'modelcluster',
+    'taggit',
+    # End of Wagtail includes
 ]
 
 MIDDLEWARE = [
@@ -70,6 +85,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # Include this to add history to models
     'simple_history.middleware.HistoryRequestMiddleware',
+    # Include this to make use of Wagtail's redirect features
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -155,6 +172,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = str(BASE_DIR.parent / 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.parent / 'media')
+
+WAGTAIL_SITE_NAME = env("WAGTAIL_SITE_NAME", default="My Site")
+WAGTAILADMIN_BASE_URL = env("WAGTAILADMIN_BASE_URL", default="http://127.0.0.1:8000")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/dev/ref/settings/#default-auto-field

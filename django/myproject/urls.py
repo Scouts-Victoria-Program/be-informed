@@ -22,6 +22,10 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
+from wagtail.admin import urls as wagtailadmin_urls
+from wagtail.core import urls as wagtail_urls
+from wagtail.documents import urls as wagtaildocs_urls
+
 urlpatterns = [
     path(
         'admin/password_reset/',
@@ -44,6 +48,11 @@ urlpatterns = [
         name='password_reset_complete',
     ),
     path('admin/', admin.site.urls),
+    # Add these to set up Wagtail URLs
+    path('cms/', include(wagtailadmin_urls)),
+    path('documents/', include(wagtaildocs_urls)),
+    path('pages/', include(wagtail_urls)),
+    # End of Wagtail URLs
     # Add this to set up authentication for REST framework
     #path('api-auth/', include('rest_framework.urls')),
 ]
