@@ -55,6 +55,9 @@ urlpatterns = [
     # End of Wagtail URLs
     # Add this to set up authentication for REST framework
     #path('api-auth/', include('rest_framework.urls')),
+    # To set up your first app to manage the homepage of this site,
+    # uncomment the below line, and replace 'myapp' with the name of your app.
+    #path('', include('myapp.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

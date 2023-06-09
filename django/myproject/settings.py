@@ -73,6 +73,8 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     # End of Wagtail includes
+    # Uncomment the below line and replace 'myapp' with the name of your app
+    #'myapp',
 ]
 
 MIDDLEWARE = [
