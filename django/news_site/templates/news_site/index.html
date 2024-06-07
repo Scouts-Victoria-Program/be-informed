@@ -1,1 +1,736 @@
-<h1>Be Informed</h1>
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="font-family: 'Nunito Sans', sans-serif;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Be Very Informed</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Articles-Cards.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column.css">
+</head>
+
+<body style="background: url(&quot;assets/img/Gumtree-Background-1920.png&quot;);background-attachment: fixed;">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" style="background: #00335d;">
+            <div class="container"><a class="navbar-brand" href="#" style="color: var(--bs-white);font-family: 'Nunito Sans', sans-serif;font-weight: bold;font-size: 38px;"><img class="d-none d-print-inline d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline" src="assets/img/PNG_VIC_H_FullCol_Rev_CMYK.png" height="100px" style="margin-top: -14px;"><img class="d-inline d-print-none d-sm-inline d-md-inline d-lg-inline d-xl-none d-xxl-none" src="assets/img/PNG_VIC_V_FullCol_Rev_CMYK.png" style="height: 125px;">
+                    <h1 class="d-none d-print-inline d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline" style="font-family: 'Nunito Sans', sans-serif;font-weight: bold;">Be Informed</h1>
+                    <h1 class="d-inline d-print-none d-sm-inline d-md-inline d-lg-inline d-xl-none d-xxl-none" style="font-family: 'Nunito Sans', sans-serif;font-weight: bold;">Be Informed</h1>
+                </a><button data-bs-toggle="collapse" class="navbar-toggler float-end float-sm-end float-md-end" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;color: var(--bs-white);">{% block navbar_item %}{% endblock %}</a></li>
+                        <li class="nav-item"><a class="nav-link active link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;color: var(--bs-white);">{% block navbar_item %}{% endblock %}</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="eventDashboard.html" style="font-family: 'Nunito Sans', sans-serif;color: var(--bs-white);"><span style="color: var(--bs-white);">{% block eventDashboardLink %}Events{% endblock %}</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><img src="assets/img/rip-blue-top.png" style="position: absolute;width: 100%;">
+    <main style="padding-top: 35px;">
+        <!-- Start: Headlines -->
+        <section>
+            <div class="container" style="margin-bottom: 25px;">
+                <div class="row">
+                    <div class="col-xl-8 col-xxl-8">
+                        <!-- Start: Hero Carousel -->
+                        <div class="carousel slide" data-bs-ride="carousel" id="carousel-1" style="height: 600px;background: #696969;">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="{% block carousel_image %}{% endblock %}" alt="{% block article_feature_image %}{% endblock %}" style="z-index: -1;"><!-- Start: 1 Row 1 Column -->
+                                    <div class="container d-flex flex-column justify-content-center h-100">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xl-4 col-xxl-10 offset-md-2">
+                                                <div style="max-width: 350px;">
+                                                    <h1 class="text-uppercase fw-bold text-white" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 5px #000000;">{% block carousel_heading %}<br>Carousel HEading<br>{% endblock %}</h1>
+                                                    <p class="text-white my-3" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 0px 0px 5px rgb(0,0,0);">{% block carousel_subheading %}{% endblock %}</p><a class="btn btn-primary btn-lg me-2" role="button" href="#" style="font-family: 'Nunito Sans', sans-serif;">{% block carousel_button_primary %}{% endblock %}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End: 1 Row 1 Column -->
+                                </div>
+                                <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="{% block carousel_image %}{% endblock %}" alt="{% block article_feature_image %}{% endblock %}" style="z-index: -1;"><!-- Start: 1 Row 1 Column -->
+                                    <div class="container d-flex flex-column justify-content-center h-100">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xl-4 col-xxl-10 offset-md-2">
+                                                <div style="max-width: 350px;">
+                                                    <h1 class="text-uppercase fw-bold text-white" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 5px #000000;">{% block carousel_heading %}{% endblock %}</h1>
+                                                    <p class="text-white my-3" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 0px 0px 5px rgb(0,0,0);">{% block carousel_subheading %}{% endblock %}</p><a class="btn btn-primary btn-lg me-2" role="button" href="#" style="font-family: 'Nunito Sans', sans-serif;">{% block carousel_button_primary %}{%endblock%}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End: 1 Row 1 Column -->
+                                </div>
+                                <div class="carousel-item h-100"><img class="w-100 d-block position-absolute h-100 fit-cover" src="{% block carousel_image %}{% endblock %}" alt="{% block article_feature_image %}{% endblock %}" style="z-index: -1;"><!-- Start: 1 Row 1 Column -->
+                                    <div class="container d-flex flex-column justify-content-center h-100">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xl-4 col-xxl-10 offset-md-2">
+                                                <div style="max-width: 350px;">
+                                                    <h1 class="text-uppercase fw-bold text-white" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 5px #000000;">{% block carousel_heading %}{% endblock %}</h1>
+                                                    <p class="text-white my-3" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 0px 0px 5px rgb(0,0,0);">{% block carousel_subheading %}{% endblock %}</p><a class="btn btn-primary btn-lg me-2" role="button" href="#" style="font-family: 'Nunito Sans', sans-serif;">{% block carousel_button_primary %}{%endblock%}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End: 1 Row 1 Column -->
+                                </div>
+                            </div>
+                            <div>
+                                <!-- Start: Previous --><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><!-- End: Previous -->
+                                <!-- Start: Next --><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a><!-- End: Next -->
+                            </div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button></div>
+                        </div><!-- End: Hero Carousel -->
+                    </div><!-- Start: From the Chief -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <div class="container">
+                            <h1><a class="link-light" href="article.html" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;" target="_blank">{% block category_Chief %}<br>From the Chief<br>{% endblock %}<br></a></h1>
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Be A Scout!</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">Plan, Do, Review, Youth Led, Adult Supported, Learning by Doing, Prepare for Adventure, Prepare for Life, All Victorians Enjoying Scouting</p><a class="btn btn-primary float-end" role="button" style="font-family: 'Nunito Sans', sans-serif;" href="article.html" target="_blank">Read more...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End: From the Chief -->
+                </div>
+            </div>
+        </section><!-- End: Headlines -->
+        <!-- Start: Hero Carousel -->
+        <section></section><!-- End: Hero Carousel -->
+        <!-- Start: breaking -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Start: breaking news -->
+                    <div class="col-xl-6 col-xxl-6">
+                        <div class="container">
+                            <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block category_title %}<br>Breaking News<br>{% endblock %}<br></a></h1>
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Breaking News</a>
+                    </div><!-- End: breaking news -->
+                    <!-- Start: Event Updates -->
+                    <div class="col-xl-6 col-xxl-6">
+                        <div class="container">
+                            <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block category_title %}<br>Event Updates<br>{% endblock %}<br></a></h1>
+                            <div class="row">
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Drunk Doctors</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Drunk Doctors</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Drunk Doctors</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="card-group" style="margin: 10px;">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Drunk Doctors</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Event updates</a>
+                    </div><!-- End: Event Updates -->
+                </div>
+            </div>
+        </section><!-- End: breaking -->
+        <!-- Start: Section News -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Start: Joey Scouts -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block joey_news %}Joey Scouts<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Joey Scout News</a>
+                    </div><!-- End: Joey Scouts -->
+                    <!-- Start: Cub Scouts -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block cub_news %} Cub Scouts<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Cub Scout News</a>
+                    </div><!-- End: Cub Scouts -->
+                    <!-- Start: Scouts -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block scout_news %}Scouts<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Scout News</a>
+                    </div><!-- End: Scouts -->
+                    <!-- Start: Venturer Scouts -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block venturer_news %}Venturer Scouts<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Venturer Scout News</a>
+                    </div><!-- End: Venturer Scouts -->
+                    <!-- Start: Rover Scouts -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block rover_news %}Rover Scouts<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Rover Scout News</a>
+                    </div><!-- End: Rover Scouts -->
+                    <!-- Start: Adult Leaders -->
+                    <div class="col-xl-4 col-xxl-4">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block adult_news %}Adult Leaders<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Divorce Attorney</h4>
+                                                    <h4 class="card-title"></h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A guy walks into a post office one day to see a middle-aged, balding man standing at the counter methodically placing "Love" stamps on bright pink envelopes with hearts all over them. He then takes out a perfume bottle and starts...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Adult News</a>
+                    </div><!-- End: Adult Leaders -->
+                </div>
+            </div>
+        </section><!-- End: Section News -->
+        <!-- Start: Program Area News -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Start: OAS Program News -->
+                    <div class="col-xl-6 col-xxl-6">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block oas_news %}<br>OAS Program News<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Climbing Squirrels</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The<br>lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Climbing Squirrels</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The<br>lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all OAS Program News</a>
+                    </div><!-- End: OAS Program News -->
+                    <!-- Start: SIA Program News -->
+                    <div class="col-xl-6 col-xxl-6">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block sia_news %}<br>SIA Program News<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Climbing Squirrels</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The<br>lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" height="100px" src="{% block article_feature_image %}{% endblock %}">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Climbing Squirrels</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">A doctor and a lawyer in two cars collided on a country road. The<br>lawyer, seeing that the doctor was a little shaken up, helped him from the car and offered him a drink from ...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all SIA Program News</a>
+                    </div><!-- End: SIA Program News -->
+                </div>
+            </div>
+        </section><!-- End: Program Area News -->
+        <!-- Start: Program Support News -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center"><button class="btn btn-danger btn-lg" type="button" data-bs-target="#" style="font-family: Nunito Sans;margin: 25px;">Login for more news</button></div>
+                </div>
+                <div class="row">
+                    <!-- Start: Training News -->
+                    <div class="col-xl-3 col-xxl-3">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block training_news %}<br>Training<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="margin: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">How to tie knots</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">The simplest way to tie a knot to ensure that it will not stop being a knot is to ensure that you tie lots...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12" style="margin: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">How to tie knots</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">The simplest way to tie a knot to ensure that it will not stop being a knot is to ensure that you tie lots...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Training News</a>
+                    </div><!-- End: Training News -->
+                    <!-- Start: Campsite News -->
+                    <div class="col-xl-3 col-xxl-3">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block campsite_news %}<br>Campsites<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Gilwell is gone!</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">We are selling Gilwell to raise capital to purchase a brand new, state-of-the-art and professionally created...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Gilwell is gone!</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">We are selling Gilwell to raise capital to purchase a brand new, state-of-the-art and professionally created...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Campsite News</a>
+                    </div><!-- End: Campsite News -->
+                    <!-- Start: Scout Hall information -->
+                    <div class="col-xl-3 col-xxl-3">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block property_news %}<br>Scout Halls<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Bunker or bust</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">In compliance with State Government regulations, any Scout Halls still resembling Army bunkers or the like will be bulldozed...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Bunker or bust</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">In compliance with State Government regulations, any Scout Halls still resembling Army bunkers or the like will be bulldozed...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Scout Hall News</a>
+                    </div><!-- End: Scout Hall information -->
+                    <!-- Start: Membership Notices -->
+                    <div class="col-xl-3 col-xxl-3">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block membership_news %}<br>Membership<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col" style="margin: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Vale to dead members</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">Many people in Scouting have passed away, and we thank them for their contributions. Their next years fees must be paid by the 30 June deadline...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="margin: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">Vale to dead members</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">Many people in Scouting have passed away, and we thank them for their contributions. Their next years fees must be paid by the 30 June deadline...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Membership News</a>
+                    </div><!-- End: Membership Notices -->
+                </div>
+            </div>
+        </section><!-- End: Program Support News -->
+        <!-- Start: Sponsors -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{% image scoutShop %}"></a></div>
+                    <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{% image %}"></a></div>
+                    <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{% image %}"></a></div>
+                    <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="{% image %}"></a></div>
+                </div>
+            </div>
+        </section><!-- End: Sponsors -->
+        <!-- Start: Uncategorized News Items -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Start: Uncategorized News -->
+                    <div class="col-xl-12 col-xxl-12">
+                        <h1><a class="link-light" href="#" style="font-family: 'Nunito Sans', sans-serif;text-shadow: 1px 1px 3px black;">{% block uncategory_news %}<br>Uncategorized News<br>{% endblock %}<br></a></h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">How to tie knots</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">The simplest way to tie a knot to ensure that it will not stop being a knot is to ensure that you tie lots...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <div class="card"><img class="card-img-top w-100 d-block" alt="{% block article_feature_image %}{% endblock %}" src="{% block article_feature_image %}{% endblock %}" height="100px">
+                                                <div class="card-body">
+                                                    <h4 class="card-title" style="font-family: 'Nunito Sans', sans-serif;">How to tie knots</h4>
+                                                    <p class="card-text" style="font-family: 'Nunito Sans', sans-serif;">The simplest way to tie a knot to ensure that it will not stop being a knot is to ensure that you tie lots...</p><button class="btn btn-primary float-end" type="button" style="font-family: 'Nunito Sans', sans-serif;">Read more...</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-success btn-sm float-end" role="button" target="_blank" style="margin: 10px;font-family: 'Nunito Sans', sans-serif;">See all Uncategorized News</a>
+                    </div><!-- End: Uncategorized News -->
+                </div>
+            </div>
+        </section><!-- End: Uncategorized News Items -->
+    </main><img style="width: 100%;" src="assets/img/rip-blue-btm.png">
+    <footer style="background: #00335d;text-align: center;box-shadow: 10px 15px 10px 20px;">
+        <div class="container text-white py-4 py-lg-5">
+            <p style="font-family: 'Nunito Sans', sans-serif;font-weight: bold;font-size: 24px;">Scouts Victoria</p>
+            <p style="font-family: 'Nunito Sans', sans-serif;font-size: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                </svg> <a href="tel:1800726887" target="_blank" style="font-family: 'Nunito Sans', sans-serif;font-weight: bold;">1800 726 887</a>&nbsp; &nbsp; &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-send-exclamation-fill">
+                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47L15.964.686Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"></path>
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0m0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"></path>
+                </svg>&nbsp;<a href="mailto:reception@scoutsvictoria.com.au?subject=[Be Informed Enquiry] " target="_blank" style="font-family: 'Nunito Sans', sans-serif;font-weight: bold;">reception@scoutsvictoria.com.au</a></p>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-light" href="https://scoutsvictoria.com.au/privacy-policy/" target="_blank">Privacy</a></li>
+                <li class="list-inline-item me-4"><a class="link-light" href="https://scoutsvictoria.com.au/terms-conditions/" target="_blank">Terms and Conditions</a></li>
+                <li class="list-inline-item"><a class="link-light" href="https://scoutsvictoria.com.au/contact-us/" target="_blank">Contact Us</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a href="https://facebook.com/Scouts-Victoria" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-light">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                        </svg></a></li>
+                <li class="list-inline-item me-4"><a href="https://twitter.com/scoutsvic" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter text-light">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"></path>
+                        </svg></a></li>
+                <li class="list-inline-item me-4"><a href="https://instagram.com/scoutsvictoria" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-light">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></a></li>
+                <li class="list-inline-item me-4"><a href="https://github.com/Scouts-Victoria" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github text-light">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                        </svg></a></li>
+            </ul>
+            <p class="text-light mb-0">Copyright © 2022 <a href="https://scoutsvictoria.com.au/" target="_blank">Scouts Victoria</a>&nbsp;All Rights Reserved<br></p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
