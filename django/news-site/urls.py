@@ -1,4 +1,4 @@
-"""myproject URL Configuration
+"""news-site URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/dev/topics/http/urls/
@@ -54,7 +54,7 @@ urlpatterns = [
     # Add these to set up Wagtail URLs
     path("cms/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
-    path("pages/", include(wagtail_urls)),
+    path("news/", include(wagtail_urls)),
     # End of Wagtail URLs
     # Add this to set up authentication for REST framework
     # path('api-auth/', include('rest_framework.urls')),
