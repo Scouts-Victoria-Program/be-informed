@@ -23,6 +23,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
+from news_site.views import HomePageView
 
 # Use this for geospatial projects
 # from django.contrib.gis import admin
@@ -60,7 +61,7 @@ urlpatterns = [
     # path('api-auth/', include('rest_framework.urls')),
     # To set up your first app to manage the homepage of this site,
     # uncomment the below line, and replace 'myapp' with the name of your app.
-    # path('', include('myapp.urls')),
+    path('', include('news_site.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

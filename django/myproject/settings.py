@@ -83,7 +83,7 @@ INSTALLED_APPS = [
     "taggit",
     # End of Wagtail includes
     # Uncomment the below line and replace 'myapp' with the name of your app
-    #'myapp',
+    'news_site',
 ]
 
 MIDDLEWARE = [
